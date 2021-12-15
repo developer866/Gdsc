@@ -1,0 +1,144 @@
+<!-- This is the code for my gdsc week two assignment about form-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up form </title>
+    <style>
+        body{
+            margin: 0px ;
+            /* margin-bottom: 100px; */
+            padding: 0px;
+            background-image: url(img/featured.jpg);
+        }
+        .container{
+            text-align: center; 
+            margin: 0px auto;
+            max-width: 300px;
+            background: rgba(255, 255, 255, 0.658);
+            margin-top: 50px;
+            padding: 50px;
+            padding-top: 0px;
+            border: 1px black solid;
+            border-radius: 5%;
+        }
+        .input-fields{
+            border: 1px gray solid ;
+            height: 30px;
+            width: 50%;
+            border-radius: 5px;
+        }
+        .input-fields::placeholder{
+            color: gray;
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+        .sign{
+            color: red;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .up{
+            color: gray;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 80px;
+        }
+        .button{
+            width: 100px;
+            height: 30px;
+            margin: 0px auto;
+            background: rgb(241, 53, 53);
+            border: 1px black solid;
+            border-radius: 10px;
+        }
+        .button:hover{
+            color: gray;
+            background: white;
+        }
+        .navbar{
+            background: rgba(255, 0, 0, 0.637);
+            overflow: auto;
+            border-radius: 0px 0px 10px 010px;
+        }
+        .navbar h1{
+            font-size: 50px;
+            color: white;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .contain{
+            max-width: 1000px;
+            margin: 0px auto;
+        }
+        .signup{
+            width: 100px;
+            height: 30px;
+            margin: 0px auto;
+            background: rgb(255, 255, 255);
+            border: 1px black solid;
+            border-radius: 5px;
+        }
+        .footer{
+            background: rgba(161, 61, 61, 0.678);
+            color: black;
+            text-align: center;
+            margin-top: 16px;
+            padding: 10px 0px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .tor{
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="contain">
+        <nav class="navbar">
+            <h1>~FAC<span class="tor">TOR</span>IAL~</h1>
+        </nav>
+        <div class="container">
+            <h1><span class="sign">Sign</span> <span class="up">up</span></h1>
+            <form action="" class="form">
+                <div>
+                    Name
+                    <br>
+                    <input type="text" name="name" class="input-fields"  required>
+                </div>
+                <br>
+                <div>
+                    Email
+                    <br>
+                    <input type="text" name="email" class="input-fields" required>
+                </div>
+                <br>
+                <div>
+                    Confirm your email
+                    <br>
+                    <input type="text" name="email" class="input-fields" required>
+                </div>
+                <br>
+                <div>
+                    Password
+                    <br>
+                    <input type="password" name="password" class="input-fields" id="password" required>
+                </div>
+                <br>
+                <div>
+                    Confirm your password
+                    <br>
+                    <input type="password" name="password" class="input-fields" id="password"  required>
+                </div>
+            </form>
+            <br>
+            <div>
+                <button class="button">submit</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>I am FACTORIAL copyright@2021</p>
+    </div>
+</body>
+</html>
